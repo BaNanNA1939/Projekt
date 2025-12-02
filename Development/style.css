@@ -1,0 +1,15 @@
+body {
+    
+    font-size: 15pt;
+    text-align: center;
+}
+
+button {
+  border: 2px solid #F0CE48; 
+  margin: 5px;
+  padding: 10px 20px; 
+  background-color: #486AF0;
+  color: #ffffff; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
