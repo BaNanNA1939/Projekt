@@ -10,13 +10,17 @@ let clear = document.getElementById("clear");
 clear.onclick = function (){
   console.log('Clearing..');
   input.value = '';
+  setTimeout(() => {
   qrBox.style.display = "none";
+}, 1000)
   
 }
 
 function generateQr(){
   console.log('Accesing server....');
-  qrBox.style.display = "block";
+  setTimeout(() => {
+    qrBox.style.display = "flex";
+  }, 1000)
   if (input.value.length>0) {
     console.log('Generating....');
     qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + input.value;
